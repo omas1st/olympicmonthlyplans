@@ -1,0 +1,161 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f1a3d 0%, #1b2a6b 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(212, 175, 55, 0.3); /* gold trim */
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 4px solid #d4af37; /* Olympic gold */
+  transition: transform 0.2s;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+}
+
+.header-section {
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(212, 175, 55, 0.15), transparent);
+  border: none;
+  padding-bottom: 10px;
+}
+
+.header-section h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #d4af37;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+}
+
+.vip-welcome {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #f0e68c;
+  letter-spacing: 1px;
+}
+
+.confirmation-section p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: 600;
+  background: rgba(255, 215, 0, 0.15);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.congrats {
+  color: #ffd700;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.notice-section,
+.offer-section {
+  font-style: italic;
+  line-height: 1.7;
+  color: #e0e0e0;
+}
+
+.summary-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.summary-section li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  font-size: 1.05rem;
+}
+
+.summary-section li:last-child {
+  border-bottom: none;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.summary-section li span {
+  color: #ccc;
+}
+
+.summary-section li strong {
+  color: #fff;
+}
+
+.action-section {
+  text-align: center;
+  border: none;
+  background: transparent;
+  padding: 10px 0;
+}
+
+.subscribe-button {
+  background: linear-gradient(145deg, #d4af37, #b8960c);
+  color: #0a0f24;
+  border: none;
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+  text-transform: uppercase;
+}
+
+.subscribe-button:hover {
+  background: linear-gradient(145deg, #e6c44d, #c9a626);
+  box-shadow: 0 12px 28px rgba(212, 175, 55, 0.7);
+  transform: scale(1.02);
+}
+
+.subscribe-button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .header-section h1 {
+    font-size: 1.6rem;
+  }
+  .subscribe-button {
+    padding: 14px 25px;
+    font-size: 1rem;
+  }
+}

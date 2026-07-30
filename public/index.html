@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympic Winning Platform – VIP Access</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Section 1: Header -->
+    <header class="section header-section">
+      <h1>OLYMPIC WINNING PLATFORM</h1>
+      <p class="vip-welcome">Welcome to Olympic VIP</p>
+    </header>
+
+    <!-- Section 2: Greeting & Subscription Confirmation -->
+    <section class="section confirmation-section">
+      <p><strong>Hello Bonisiwe Dlamini,</strong></p>
+      <p>Tracking Number: <span class="highlight">member2443090WP</span></p>
+      <p>You have successfully subscribed for a weekly plan: <strong>R 4500</strong>.</p>
+      <p class="congrats">🎉 Congratulations!</p>
+    </section>
+
+    <!-- Section 3: Winning numbers available, space occupied -->
+    <section class="section notice-section">
+      <p>We are happy to inform you that your winning numbers are available, but the space for the weekly plans is occupied. We only have monthly plans available for you.</p>
+    </section>
+
+    <!-- Section 4: Offer details -->
+    <section class="section offer-section">
+      <p>Kindly subscribe for monthly plans now, to access the winning numbers immediately. You are allowed to pay 25% of the monthly plans; after you win for 3 days, then you will be required to pay the balance.</p>
+    </section>
+
+    <!-- Section 5: Financial summary -->
+    <section class="section summary-section">
+      <ul>
+        <li><span>Your current weekly plan:</span> <strong>R4,500</strong></li>
+        <li><span>Monthly plan:</span> <strong>R36,000</strong></li>
+        <li><span>Balance remaining:</span> <strong>R31,500</strong></li>
+        <li><span>25% to pay now:</span> <strong>R7,900</strong></li>
+      </ul>
+    </section>
+
+    <!-- Section 6: Action button -->
+    <section class="section action-section">
+      <button id="subscribeBtn" class="subscribe-button">
+        Subscribe for Monthly Plan Now to Access Winning Numbers Immediately
+      </button>
+    </section>
+  </div>
+
+  <script>
+    document.getElementById('subscribeBtn').addEventListener('click', function() {
+      // Show popup message (alert has an OK button)
+      alert('kindly make payment of R7,900 now.');
+      // After user clicks OK, redirect to external site
+      window.location.href = 'https://www.olympicwinningplatform.xyz';
+    });
+  </script>
+</body>
+</html>
