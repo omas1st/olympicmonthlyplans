@@ -117,14 +117,58 @@ body {
   color: #fff;
 }
 
+/* Action section (buttons container) */
 .action-section {
   text-align: center;
   border: none;
   background: transparent;
   padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
+/* WhatsApp button */
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background: linear-gradient(145deg, #25D366, #128C7E);
+  color: #ffffff;
+  border: none;
+  padding: 16px 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+  text-transform: uppercase;
+}
+
+.whatsapp-button:hover {
+  background: linear-gradient(145deg, #2be67a, #17a36b);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.7);
+  transform: scale(1.02);
+}
+
+.whatsapp-button:active {
+  transform: scale(0.98);
+}
+
+.whatsapp-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+/* Subscribe (gold) button */
 .subscribe-button {
+  width: 100%;
   background: linear-gradient(145deg, #d4af37, #b8960c);
   color: #0a0f24;
   border: none;
@@ -137,6 +181,7 @@ body {
   transition: all 0.3s ease;
   box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 .subscribe-button:hover {
@@ -154,6 +199,8 @@ body {
   .header-section h1 {
     font-size: 1.6rem;
   }
+
+  .whatsapp-button,
   .subscribe-button {
     padding: 14px 25px;
     font-size: 1rem;
